@@ -21,6 +21,10 @@ const robotSchema = new Schema(
 			minLength: 4, // eg: #f4a
 			maxLength: 7, // eg: #ff44aa
 		},
+		health: {
+			type: Number,
+			default: 100,
+		},
 		attack: numberAttribute,
 		defense: numberAttribute,
 		healing: numberAttribute,
