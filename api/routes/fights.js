@@ -3,7 +3,7 @@ const router = express.Router();
 const Fight = require("../models/fight.model");
 
 router.get("/getAll", async (req, res, next) => {
-	const allFights = Fight.find();
+	const allFights = await Fight.find({});
 	res.json({ data: allFights, count: allFights.length });
 });
 
@@ -17,6 +17,7 @@ router.get("/getOne", async (req, res, next) => {
 router.post("/save", async (req, res, next) => {
 	const { body } = req;
 
+	console.log(body)
 	try {
 		const newFight = new Fight(body);
 

@@ -58,3 +58,9 @@ A few ideas:<br/>
 - Style the app
 - Add new capabilities to your robots (more types of attacks, super moves, healing, etc.)
 - Support multiple users of the application
+
+
+/robots
+/robots/id
+/fights
+/fights/id?

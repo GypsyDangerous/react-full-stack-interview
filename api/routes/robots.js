@@ -19,6 +19,7 @@ router.get("/getAll", async (req, res, next) => {
 router.post("/create", async (req, res, next) => {
 	const { body } = req;
 
+
 	try {
 		const newRobot = new Robot(body);
 

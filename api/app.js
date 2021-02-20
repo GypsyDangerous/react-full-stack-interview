@@ -7,6 +7,7 @@ const indexRouter = require("./routes/index");
 const robotsRouter = require("./routes/robots");
 const fightsRouter = require("./routes/fights")
 const config = require("./config.json")
+const cors = require("cors")
 
 const mongoose = require('mongoose');
 
@@ -17,6 +18,7 @@ mongoose.connect(config.ATLAS_URI, {useNewUrlParser: true, useUnifiedTopology: t
 
 const app = express();
 
+app.use(cors())
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
