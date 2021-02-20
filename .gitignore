@@ -4,6 +4,10 @@
 
 # dependencies
 /node_modules
+
+/api/node_modules
+/api/config.json
+
 /.pnp
 .pnp.js
 
