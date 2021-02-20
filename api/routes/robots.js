@@ -11,8 +11,8 @@ router.get("/getOne", async (req, res, next) => {
 	res.json({ data: robot });
 });
 
-router.get("/getAll", (req, res, next) => {
-	const robots = Robot.find({});
+router.get("/getAll", async (req, res, next) => {
+	const robots = await Robot.find({});
 	res.json({ count: robots.length, data: robots });
 });
 
