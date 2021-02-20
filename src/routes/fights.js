@@ -27,7 +27,7 @@ const Robots = () => {
 						const json = await response.json();
 
 						return { ...fight, winner: json.data };
-					})
+					}) || []
 				)
 			);
 		})();
