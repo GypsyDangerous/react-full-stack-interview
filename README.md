@@ -10,4 +10,4 @@
 7. use the api with `http://localhost:3001`
 
 Since this will not be a public thing I don't mind sharing my mongodb atlas uri with you guys
-here it is: <Retracted>
+here it is: Retracted
